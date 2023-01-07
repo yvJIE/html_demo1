@@ -11,10 +11,27 @@
     <title>yvJIE</title>
   </head>
   <body>
-    <!--div标签的作用是创造一个区块,可自定义位置,背景颜色和大小-->
+    <!--
+      div标签的作用是创造一个区块,可自定义位置,背景颜色和大小
+      标签属性需要写在首标签的内部,如此处的style
+    -->
     <div style="background-color: #f1f1f1; text-align: center; padding: 40px">
-      <img src="JIE.jpg" alt="JIE" width="150" />
-      <!--src:来源;alt:替换文本-->
+      <img
+        src="JIE.jpg"
+        alt="JIE"
+        title="这是我的头像"
+        width="150"
+        border="2"
+      />
+      <!--
+        src:来源;
+        alt:替换文本;
+        title:鼠标移到图片上的提示文本;
+        width:宽度;
+        height:高度;
+        border:边框粗细(已被废弃,但仍可使用)
+        属性之间不分先后顺序,标签名与属性、属性与属性之间以空格隔开
+      -->
       <p><i>Hello</i>,我是<b>yvJIE</b></p>
       <p><del>一个计算机废柴</del></p>
       <!--b标签的作用是加粗字体,可以使用功能相同的strong标签替换-->
@@ -40,15 +57,39 @@
       <span>我的</span>
       <a
         href="https://space.bilibili.com/342064131?spm_id_from=333.1007.0.0"
+        target="_blank"
         style="font-family: 'Consolas', Courier, monospace"
         >bilibili
       </a>
+      <!--
+        a为anchor的缩写,意为:锚;
+        可以操作两个属性:href和target
+        href为必须属性,用于指定链接目标的url地址;
+        target用于指定链接的打开方式,
+        默认值_self为在当前窗口打开,
+        _blank为在新窗口中打开;
+        首尾标签包含的是超链接文本或图片
+      -->
+      <!--
+        href链接分为外部链接和内部链接
+        外部链接如GitHub,bilibili
+        内部链接就是自己的文件中的另一个html页面,
+        直接链接内部页面的名称就可以了,例如my_new_page.html
+      -->
       <br />
       <span>我的</span>
       <a
         href="https://github.com/yvJIE"
+        target="_blank"
         style="font-family: 'Consolas', Courier, monospace"
         >github
+      </a>
+      <br />
+      <a
+        href="index2.html"
+        target="_blank"
+        style="font-family: 'Consolas', Courier, monospace"
+        >NewPage
       </a>
     </div>
   </body>
